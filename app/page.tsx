@@ -4,6 +4,7 @@ import { FeaturedTools } from "@/components/featured-tools"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Quote } from "lucide-react"
+import { Download, Monitor, Zap, Shield, Users, PlayCircle, Clock, Laptop } from "lucide-react"
 
 export default function Home() {
   const features = [
@@ -42,7 +43,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold mb-10">Youtube Downloader 4k Tools Nav</h1>
             <h2 className="text-2xl font-bold mb-6">Convert Youtube Videos to MP4 with Ease</h2>
             <p className="text-0.5xl text-gray-600 mb-1">
-              Welcome to Youtube Downloader 4k Nav - your one-stop resource for finding the best Youtube to MP4 converters and downloaders. Whether you're looking to save Youtube videos or convert Youtube content to MP4, we've got you covered!
+              Welcome to YouTube Downloader 4K, your ultimate destination for finding the best tools to download YouTube videos in stunning 4K quality. Our site curates top-rated YouTube downloader tools to ensure you get the highest quality video downloads effortlessly and for free.
             </p>
           </div>
         </div>
@@ -51,10 +52,164 @@ export default function Home() {
       {/* Featured Tools Section */}
       <FeaturedTools />
 
+
+      <section className="space-y-8">
+        <h2 className="text-3xl font-bold text-center">Technical Specifications</h2>
+        <div className="max-w-2xl mx-auto grid gap-6">
+          <div className="grid grid-cols-2 gap-4 p-6 rounded-lg border">
+            <div className="font-semibold">Resolution Support</div>
+            <div className="text-gray-600">1080p, 2K, 4K, 8K</div>
+          </div>
+          <div className="grid grid-cols-2 gap-4 p-6 rounded-lg border">
+            <div className="font-semibold">File Formats</div>
+            <div className="text-gray-600">MP4, MP3, M4A, and more</div>
+          </div>
+          <div className="grid grid-cols-2 gap-4 p-6 rounded-lg border">
+            <div className="font-semibold">Compatibility</div>
+            <div className="text-gray-600">Windows, macOS, Android, iOS</div>
+          </div>
+          <div className="grid grid-cols-2 gap-4 p-6 rounded-lg border">
+            <div className="font-semibold">Speed</div>
+            <div className="text-gray-600">High-speed downloads with no throttling</div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <div className="container mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto">
+        {/* Why Choose */}
+          <section className="bg-gray-50 rounded-lg p-8 mb-1">
+            <h2 className="text-3xl font-semibold mb-6 text-center">Why Choose Our Youtube to MP4 Tool Nav?</h2>
+            <ul className="space-y-4">
+              <li className="flex items-start">
+                <span className="flex-shrink-0 w-6 h-6 text-green-500 mr-2">✓</span>
+                <span>
+                  <strong>Curated Selection:</strong> We handpick the best YouTube downloader tools, ensuring you get reliable and efficient downloads every time.
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="flex-shrink-0 w-6 h-6 text-green-500 mr-2">✓</span>
+                <span>
+                  <strong>Comprehensive Coverage:</strong> Our tools support all types of YouTube content, including videos, shorts, and reels.
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="flex-shrink-0 w-6 h-6 text-green-500 mr-2">✓</span>
+                <span>
+                  <strong>Regular Updates:</strong> Our list of downloaders is constantly refreshed to include the latest and most effective tools available.
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="flex-shrink-0 w-6 h-6 text-green-500 mr-2">✓</span>
+                <span>
+                  <strong>Free Access:</strong> No registration needed - start converting Youtube to MP4 now!
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="flex-shrink-0 w-6 h-6 text-green-500 mr-2">✓</span>
+                <span>
+                  <strong>Multi-Platform Support:</strong> Works on all devices - mobile, tablet, and desktop
+                </span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+
+
+
+      <section className="space-y-8">
+        <h2 className="text-3xl font-bold text-center">Key Features</h2>
+        <div className="flex flex-nowrap overflow-x-auto gap-4 pb-4 -mx-4 px-4 lg:justify-center">
+          <div className="flex flex-col items-center p-4 rounded-lg border hover:shadow-lg transition-shadow min-w-[200px] w-[200px]">
+            <Monitor className="w-10 h-10 text-[#4285f4] mb-2" />
+            <h3 className="font-semibold text-lg text-center mb-2">4K Ultra HD Quality</h3>
+            <p className="text-sm text-gray-600 text-center">
+              Download YouTube videos in breathtaking 4K resolution.
+            </p>
+          </div>
+          <div className="flex flex-col items-center p-4 rounded-lg border hover:shadow-lg transition-shadow min-w-[200px] w-[200px]">
+            <Zap className="w-10 h-10 text-[#4285f4] mb-2" />
+            <h3 className="font-semibold text-lg text-center mb-2">Fast and Easy Downloads</h3>
+            <p className="text-sm text-gray-600 text-center">Enjoy seamless and quick downloads with our tools.</p>
+          </div>
+          <div className="flex flex-col items-center p-4 rounded-lg border hover:shadow-lg transition-shadow min-w-[200px] w-[200px]">
+            <Laptop className="w-10 h-10 text-[#4285f4] mb-2" />
+            <h3 className="font-semibold text-lg text-center mb-2">Multi-Platform Support</h3>
+            <p className="text-sm text-gray-600 text-center">
+              Compatible with all devices. Download anytime, anywhere.
+            </p>
+          </div>
+          <div className="flex flex-col items-center p-4 rounded-lg border hover:shadow-lg transition-shadow min-w-[200px] w-[200px]">
+            <Shield className="w-10 h-10 text-[#4285f4] mb-2" />
+            <h3 className="font-semibold text-lg text-center mb-2">No Ads or Watermarks</h3>
+            <p className="text-sm text-gray-600 text-center">
+              Experience uninterrupted downloads without annoying ads.
+            </p>
+          </div>
+          <div className="flex flex-col items-center p-4 rounded-lg border hover:shadow-lg transition-shadow min-w-[200px] w-[200px]">
+            <Users className="w-10 h-10 text-[#4285f4] mb-2" />
+            <h3 className="font-semibold text-lg text-center mb-2">Free, No Registration</h3>
+            <p className="text-sm text-gray-600 text-center">
+              Access all features without sign-ups or subscriptions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section className="space-y-8 bg-gray-50 py-12 -mx-4 px-4">
+        <h2 className="text-3xl font-bold text-center">Benefits</h2>
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="space-y-4">
+            <PlayCircle className="w-8 h-8 text-[#4285f4]" />
+            <h3 className="font-semibold text-xl">High-Quality Viewing</h3>
+            <p className="text-gray-600">
+              Relive your favorite YouTube moments in crystal-clear 4K resolution, perfect for large screens and
+              high-definition displays.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <Users className="w-8 h-8 text-[#4285f4]" />
+            <h3 className="font-semibold text-xl">User-Friendly Interface</h3>
+            <p className="text-gray-600">
+              Our curated tools feature intuitive interfaces that make downloading videos a breeze, even for
+              beginners.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <Download className="w-8 h-8 text-[#4285f4]" />
+            <h3 className="font-semibold text-xl">Versatile Formats</h3>
+            <p className="text-gray-600">
+              Download videos in various formats, including MP4, ensuring compatibility with all your devices.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <Clock className="w-8 h-8 text-[#4285f4]" />
+            <h3 className="font-semibold text-xl">Time-Saving</h3>
+            <p className="text-gray-600">
+              Quickly download entire playlists or multiple videos at once, saving you valuable time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
       {/* Main Content Container */}
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           {/* Our Services Section */}
+
+
+
+
+
+
           <section className="mb-16">
             <h2 className="text-3xl font-semibold mb-8 text-center">Featured Youtube to MP4 Tool Categories</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -72,41 +227,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg-gray-50 rounded-lg p-8 mb-16">
-            <h2 className="text-3xl font-semibold mb-6 text-center">Why Choose Our Youtube to MP4 Tool Nav?</h2>
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <span className="flex-shrink-0 w-6 h-6 text-green-500 mr-2">✓</span>
-                <span>
-                  <strong>Curated Selection:</strong> Handpicked top Youtube to MP4 converter tools for you.
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="flex-shrink-0 w-6 h-6 text-green-500 mr-2">✓</span>
-                <span>
-                  <strong>Comprehensive Coverage:</strong> Tools for all Youtube content: videos, Stories, and Reels.
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="flex-shrink-0 w-6 h-6 text-green-500 mr-2">✓</span>
-                <span>
-                  <strong>Regular Updates:</strong> Our Youtube video downloader list is constantly refreshed.
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="flex-shrink-0 w-6 h-6 text-green-500 mr-2">✓</span>
-                <span>
-                  <strong>Free Access:</strong> No registration needed - start converting Youtube to MP4 now!
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="flex-shrink-0 w-6 h-6 text-green-500 mr-2">✓</span>
-                <span>
-                  <strong>Multi-Platform Support:</strong> Works on all devices - mobile, tablet, and desktop
-                </span>
-              </li>
-            </ul>
-          </section>
+
 
           <section className="mb-16">
             <h2 className="text-3xl font-semibold mb-6 text-center">How to Convert Youtube to MP4</h2>
@@ -219,6 +340,7 @@ export default function Home() {
               Remember: Always respect copyright laws when converting Youtube videos to MP4.
             </p>
           </section>
+
         </div>
       </div>
     </>
