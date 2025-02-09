@@ -10,7 +10,7 @@ export function Footer() {
             <Instagram className="h-6 w-6" />
           
             <Link href="/" className="font-semibold text-xl">
-              InstagramToMP4
+              YoutubeDownloader4k 
             </Link>
           </div>
           <nav className="flex flex-wrap justify-center md:justify-end gap-4">
@@ -27,7 +27,7 @@ export function Footer() {
           </nav>
         </div>
         <div className="mt-8 text-center text-gray-500 text-sm">
-          © {new Date().getFullYear()} InstagramToMP4.com. All rights reserved.
+          © {new Date().getFullYear()} YoutubeDownloader4k.com. All rights reserved.
         </div>
       </div>
     </footer>
