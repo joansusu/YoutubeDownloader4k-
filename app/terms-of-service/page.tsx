@@ -7,7 +7,7 @@ export default function Terms(){
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
             <p className="text-gray-700 mb-4">
-              Welcome to YoutubeDownloader4k . By accessing our website (https://YoutubeDownloader4k.com/), you agree to be bound by these Terms of Service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site.
+              Welcome to YoutubeDownloader4k . By accessing our website (https://youtubedownloader4k.com/), you agree to be bound by these Terms of Service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site.
             </p>
           </section>
     
