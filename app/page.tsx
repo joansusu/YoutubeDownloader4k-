@@ -53,7 +53,7 @@ export default function Home() {
       <FeaturedTools />
 
 
-      <section className="space-y-8">
+      {/* <section className="space-y-8">
         <h2 className="text-3xl font-bold text-center">Technical Specifications</h2>
         <div className="max-w-2xl mx-auto grid gap-6">
           <div className="grid grid-cols-2 gap-4 p-6 rounded-lg border">
@@ -73,7 +73,7 @@ export default function Home() {
             <div className="text-gray-600">High-speed downloads with no throttling</div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 
