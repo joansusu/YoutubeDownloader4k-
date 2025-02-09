@@ -4,7 +4,7 @@ export default function Privacy(){
           <h1 className="text-4xl font-bold mb-6 text-center">Privacy Policy</h1>
           <div className="space-y-6 text-gray-700">
             <p>
-              Your privacy on the Internet is very important to YoutubeDownloader4k  website. This privacy policy aims to inform you about the information that is obtained from you when you visit YoutubeDownloader4k  website, how the information is used and disclosed, and how you control the use and disclosure of private information, and how to protect it.
+              Your privacy on the Internet is very important to YoutubeDownloader4k website. This privacy policy aims to inform you about the information that is obtained from you when you visit YoutubeDownloader4k website, how the information is used and disclosed, and how you control the use and disclosure of private information, and how to protect it.
             </p>
             <p>
               Please take a moment to familiarize yourself with our privacy practices and contact us if you have any questions.
@@ -52,13 +52,13 @@ export default function Privacy(){
             
             <h2 className="text-2xl font-semibold mt-8 mb-4">Retention of Personal Data</h2>
             <p>
-              The YoutubeDownloader4k  website will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our legal agreements and policies.
+              The YoutubeDownloader4k website will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our legal agreements and policies.
             </p>
             
             <h2 className="text-2xl font-semibold mt-8 mb-4">Disclosure of Personal Data</h2>
             <ul className="list-disc pl-6 mt-2 space-y-2">
-              <li><strong>Business Transactions:</strong> If the YoutubeDownloader4k  is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred.</li>
-              <li><strong>Law enforcement:</strong> Under certain circumstances, the YoutubeDownloader4k  may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities.</li>
+              <li><strong>Business Transactions:</strong> If the YoutubeDownloader4k is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred.</li>
+              <li><strong>Law enforcement:</strong> Under certain circumstances, the YoutubeDownloader4k may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities.</li>
               <li><strong>Other legal requirements:</strong> Comply with a legal obligation, Prevent or investigate possible wrongdoing in connection with the Service, Protect against legal liability, Security of Your Personal Data.</li>
             </ul>
             
@@ -69,7 +69,7 @@ export default function Privacy(){
             
             <h2 className="text-2xl font-semibold mt-8 mb-4">Changes of Privacy Policy</h2>
             <p>
-              YoutubeDownloader4k  has full authority to update this Privacy Policy at any time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes and to see how we are helping to protect the personal information we collect.
+              YoutubeDownloader4k has full authority to update this Privacy Policy at any time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes and to see how we are helping to protect the personal information we collect.
             </p>
             
             <h2 className="text-2xl font-semibold mt-8 mb-4">Acceptance of the privacy policy</h2>
