@@ -8,26 +8,26 @@ import { Quote } from "lucide-react"
 export default function Home() {
   const features = [
     {
-      title: "YoutubeDownloader4k",
-      description: "Convert and download YoutubeDownloader4k format",
+      title: "Youtube to Mp3",
+      description: "Convert and download Youtube to mp3 format",
       icon: Video,
       href: "#",
     },
     {
-      title: "YoutubeDownloader4k",
-      description: "Transform Youtube Reels into downloadable MP4 files",
+      title: "Youtube to Mp4",
+      description: "Transform Youtube to MP4 files",
       icon: Film,
       href: "#",
     },
     {
-      title: "Youtube Stories to MP4",
-      description: "Save Youtube Stories as MP4 videos easily",
+      title: "Youtube Extensions",
+      description: "best youtube extensions, youtube video downloader extensions",
       icon: Youtube,
       href: "#",
     },
     {
-      title: "Youtube Photos",
-      description: "Download Youtube photos in high resolution",
+      title: "Youtube Shorts Downloader",
+      description: "Download Youtube video in high resolution",
       icon: Image,
       href: "#",
     },
