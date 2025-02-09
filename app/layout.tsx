@@ -25,7 +25,7 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>
-      <GoogleAnalytics gaId="G-SKHS9RZBGR" />
+      <GoogleAnalytics gaId="G-RXQ68911GG" />
     </html>
   )
 }
