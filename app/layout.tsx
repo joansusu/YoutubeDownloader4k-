@@ -9,8 +9,8 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Instagram to MP4 Downloader Tools | Best Ways to Convert Instagram Videos",
-  description: "Discover top Instagram to MP4 converter tools. Our curated list helps you easily download and convert Instagram videos to MP4 format. Find the best Instagram video downloaders here!",
+  title: "Youtube to MP4 Downloader Tools | Best Ways to Convert Youtube Videos",
+  description: "Discover top Youtube to MP4 converter tools. Our curated list helps you easily download and convert Youtube videos to MP4 format. Find the best Youtube video downloaders here!",
 }
 
 export default function RootLayout({
