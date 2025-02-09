@@ -15,112 +15,173 @@ interface FeaturedTool {
 }
 
 const featuredTools: FeaturedTool[] = [
-  
 
-{
-    name: "Save Insta",
-    description: "Instagram Video Downloader, instagram video download mp4, download Insta video mp4, instagram to mp4, instagram to mp4 converter",
-    imageUrl: "/instagram to mp4(1).png",
-    link: "https://www.save-free.com/video-downloader/",
-    tag: "instagram to mp4",
+
+  {
+    name: "Y2Down",
+    description: "Y2Down is an online YouTube video downloader that lets you download videos in MP4 format at resolutions such as 1080p, 2k, 4k, 8k, and more for free.",
+    imageUrl: "/youtube downloader 4k(1).png",
+    link: "https://www.y2down.app/",
+    tag: "youtube downloader 4k",
     rating: 4.8
   },
+
+
   {
-    name: "SaveClip",
-    description: "Instagram Video Downloader is an Instagram video downloader, download videos from Instagram (Insta) to PC, tablet, phone (iPhone, Android).",
-    imageUrl: "/instagram to mp4(2).png",
-    link: "https://saveclip.app/en/download-video-instagram",
-    tag: "instagram to mp4",
-    rating: 4.7
-  },
-  {
-    name: "FastDl",
-    description: "FastDl is an tool to help you with Download Instagram Videos, Reels, Photos, IGTV & Albums. It's easy to use on any device, mobile, tablet, or computer.",
-    imageUrl: "/instagram to mp4(3).png",
-    link: "https://fastdl.app/en",
-    tag: "instagram to mp4",
-    rating: 4.7
-  },
-  {
-    name: "INDownloader",
-    description: "Download high-quality Instagram videos with our Insta video downloader. Save IG videos to MP4 format for free and anonymously. Easily download video from Instagram or save Insta videos with just one click.",
-    imageUrl: "/instagram to mp4(4).png",
-    link: "https://indownloader.app/video-downloader",
-    tag: "instagram to mp4",
-    rating: 4.6
-  },
-  {
-    name: "Snapinsta",
-    description: "Instagram Video Download, Photos, Reels, IGTV, and to Mobile and PC, Instagram Downloader (Photo, Video, IGTV) is the Best Free Online Downloader Tool. Easily download Instagram photos, videos, stories, reels (mp4)...",
-    imageUrl: "/instagram to mp4(5).png",
-    link: "https://snapinst.app/",
-    tag: "instagram to mp4",
+    name: "Ytmp3.so",
+    description: "Ytmp3.so helps you download 4K videos without losing their quality. Read on to know more about it.",
+    imageUrl: "/youtube downloader 4k(2).png",
+    link: "https://ytmp3.so/en/youtube-4k-downloader",
+    tag: "youtube downloader 4k",
     rating: 4.8
   },
+
+
   {
-    name: "SMALL SEO TOOLS",
-    description: "Instagram to MP4 converter by SmallSEOTools lets you convert Instagram videos to mp4 format in a few clicks. Try Now!",
-    imageUrl: "/instagram to mp4(6).png",
-    link: "https://smallseotools.com/instagram-to-mp4/",
-    tag: "instagram to mp4",
-    rating: 4.6
-  },
-  {
-    name: "Wave.video",
-    description: "Instantly download your favorite Instagram videos in MP4 HD quality. Complement your efforts with the best Instagram to MP4 HD video downloader, get started today.",
-    imageUrl: "/instagram to mp4(7).png",
-    link: "https://wave.video/convert/instagram-to-mp4",
-    tag: "instagram to mp4",
-    rating: 4.5
-  },
-  {
-    name: "SmoothDownloader",
-    description: "Free Instagram Video Downloader Online. Download high quality Instagram video on your Windows PC, Mac, Android Phone, iPhone and tablet.",
-    imageUrl: "/instagram to mp4(8).png",
-    link: "https://www.smoothdownloader.com/instagram-video-downloader-online/",
-    tag: "instagram to mp4",
-    rating: 4.7
-  },
-  {
-    name: "InDown.io",
-    description: "A free & fast tool to download Instagram video online. Easy to use & provide Instagram video download without any login or signup.",
-    imageUrl: "/instagram to mp4(9).png",
-    link: "https://indown.io/",
-    tag: "instagram to mp4",
+    name: "AISEO",
+    description: "Download YouTube videos and shorts in HD with AISEO YouTube Video Downloader. No ads, watermarks, or registration required. Fast, free, and easy!",
+    imageUrl: "/youtube downloader 4k(3).png",
+    link: "https://app.aiseo.ai/tools/youtube-video-downloader",
+    tag: "youtube downloader 4k",
     rating: 4.8
   },
+
+
   {
-    name: "OnlineVideoConverter.pro",
-    description: "Enjoy Free Instagram Downloader - an online app for downloading Instagram videos and music. Easily download Instagram Videos, Stories, Reels",
-    imageUrl: "/instagram to mp4(10).png",
-    link: "https://en4.onlinevideoconverter.pro/13HJ/download-video-instagram",
-    tag: "instagram to mp4",
-    rating: 4.7
+    name: "Y2Meta",
+    description: "Y2Meta is a Fast and Free YouTube Downloader that allows you to Download YouTube Videos in HD & UHD, 1080p, 2K, and 4K at the highest speed.",
+    imageUrl: "/youtube downloader 4k(4).png",
+    link: "https://y2meta.tube/en/",
+    tag: "youtube downloader 4k",
+    rating: 4.8
   },
+
+
   {
-    name: "Capte",
-    description: "Download Instagram videos for free. Our ad-free LinkedIn downloader HD offers unparalleled simplicity for saving quality videos. Fast, reliable and easy to use For real.",
-    imageUrl: "/instagram to mp4(11).png",
-    link: "https://www.getcapte.com/en/tools/instagram-to-mp4",
-    tag: "instagram to mp4",
-    rating: 4.6
+    name: "UKC",
+    description: "YouTube video downloader Download YouTube videos in 1080p, 4k, and more for free. MP3 M4A ...",
+    imageUrl: "/youtube downloader 4k(5).png",
+    link: "https://www.ukc.com.np/p/youtube-video-downloader-5.html",
+    tag: "youtube downloader 4k",
+    rating: 4.8
   },
+
+
   {
-    name: "sssinstagram",
-    description: "Instagram Video Download",
-    imageUrl: "/instagram to mp4(12).png",
-    link: "https://sssinstagram.com/video-downloader",
-    tag: "instagram to mp4",
-    rating: 4.7
+    name: "Kashmir Pulse",
+    description: "Using the free YouTube Video Downloader on The Kashmir Pulse is the quickest and simplest method to download YouTube videos and music in SD, HD & 4K quality.",
+    imageUrl: "/youtube downloader 4k(6).png",
+    link: "https://kashmirpulse.com/youtube-video-downloader-online",
+    tag: "youtube downloader 4k",
+    rating: 4.8
   },
+
+
   {
-    name: "YT5s",
-    description: "Tool to download video from Instagram, allow to convert Instagram to mp4 high quality in 1080p, 2160p, 2k, 4k, 8k on PC, tablet, iPhone, Android.",
-    imageUrl: "/instagram to mp4(13).png",
-    link: "https://yt5s.io/en/instagram-to-mp4",
-    tag: "instagram to mp4",
-    rating: 4.6
-  }
+    name: "ACETHINKER",
+    description: "Download your YouTube videos with the best quality using this amazing YouTube to 4K video downloader with seamless downloading process.",
+    imageUrl: "/youtube downloader 4k(7).png",
+    link: "https://www.acethinker.com/save-youtube-4k",
+    tag: "youtube downloader 4k",
+    rating: 4.8
+  },
+
+
+  {
+    name: "Y2DOWN",
+    description: "Baixe e converta seus vídeos favoritos do YouTube na resolução de 1080p, 1440p, 4k, e 8k. É gratuito, rápido e simples. Sem Anúncios, Sem Limites.",
+    imageUrl: "/youtube downloader 4k(8).png",
+    link: "https://y2down.cc/pt/",
+    tag: "youtube downloader 4k",
+    rating: 4.8
+  },
+
+
+  {
+    name: "SocialPlug",
+    description: "Download Youtube videos for free with SocialPlug’s Youtube Video Downloader. Choose from lots of resolution and format options, no strings attached.",
+    imageUrl: "/youtube video downloader (2).png",
+    link: "https://www.socialplug.io/free-tools/youtube-video-downloader",
+    tag: "youtube downloader 4k",
+    rating: 4.8
+  },
+
+
+  {
+    name: "YT1D",
+    description: "Yt1d is a safe,easy,fast YouTube video online downloader,compatible with mac, Android, and Windows,allows you to download high-quality(HD,720p,1080p,4k) Youtube videos and Shorts to MP3,MP4 and other formats for free",
+    imageUrl: "/youtube video downloader (3).png",
+    link: "https://yt1d.com/en136/",
+    tag: "youtube downloader 4k",
+    rating: 4.8
+  },
+
+
+
+  {
+    name: "Zeemo AI",
+    description: "The best YouTube video downloader ever! Download YouTube videos online for free, and you can also edit videos and subtitles on Zeemo’s workspace directly.",
+    imageUrl: "/youtube video downloader (4).png",
+    link: "https://zeemo.ai/tools/youtube-video-downloader",
+    tag: "youtube downloader 4k",
+    rating: 4.8
+  },
+
+
+
+  {
+    name: "Transkriptor",
+    description: "Download YouTube videos to your device easy, fast, and for free. Download YouTube videos as MP4 with Transkriptor now!",
+    imageUrl: "/youtube video downloader (5).png",
+    link: "https://transkriptor.com/youtube-video-downloader/",
+    tag: "youtube downloader 4k",
+    rating: 4.8
+  },
+
+
+
+  {
+    name: "Ummy",
+    description: "Ummy Online is the best free web video downloader service. Just copy the url of the video from the Internet and paste it into the Ummy Video Downloader tab to start a download!",
+    imageUrl: "/youtube video downloader (7).png",
+    link: "https://ummy.net/en104vO/",
+    tag: "youtube downloader 4k",
+    rating: 4.8
+  },
+
+
+
+  {
+    name: "HireQuotient",
+    description: "Download videos from YouTube quickly and easily with our YouTube Video Downloader. Get started now and enjoy your favorite videos offline!",
+    imageUrl: "/youtube video downloader (8).png",
+    link: "https://www.hirequotient.com/youtube-video-downloader",
+    tag: "youtube downloader 4k",
+    rating: 4.8
+  },
+
+
+
+  {
+    name: "Y2Mate",
+    description: "Y2Mate is the fastest web app to download Youtube videos for free. Easily Convert youtube videos to mp3 and mp4 and save them to your PC, Mobile, and tablets.",
+    imageUrl: "/youtube video downloader (9).png",
+    link: "https://en.y2mate.is/x105/",
+    tag: "youtube downloader 4k",
+    rating: 4.8
+  },
+
+
+
+  {
+    name: "Keepvid",
+    description: "Keepvid helps download online videos from many sites. Best Youtube downloader, Keepvid is free, fast & secure. Youtube to mp3 converter included.",
+    imageUrl: "/youtube video downloader (10).png",
+    link: "https://ww12.keepvid.works/en/",
+    tag: "youtube downloader 4k",
+    rating: 4.8
+  },
+
   // Add more tools here...
 ]
 
@@ -134,7 +195,7 @@ export function FeaturedTools() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Featured Tools</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Discover our handpicked selection of the best Instagram video downloaders and converters
+            Discover our handpicked selection of the best Youtube video downloaders and converters
           </p>
         </div>
 
