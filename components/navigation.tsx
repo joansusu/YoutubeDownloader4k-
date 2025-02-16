@@ -9,8 +9,8 @@ export function Navigation() {
           YoutubeDownloader4k
           </Link>
           <div className="hidden md:flex space-x-6">
-            <Link href="#" className="text-white hover:text-gray-200">
-              About
+            <Link href="/youtube-name-generator" className="text-white hover:text-gray-200">
+              Youtube Name Generator
             </Link>
             <Link href="#" className="text-white hover:text-gray-200">
               Tools
