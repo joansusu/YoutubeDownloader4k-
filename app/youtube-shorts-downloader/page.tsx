@@ -6,6 +6,14 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Quote } from "lucide-react"
 import { Download, Monitor, Zap, Shield, Users, PlayCircle, Clock, Laptop } from "lucide-react"
 import { featuredTools } from "@/lib/featuredTools";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Best YouTube Shorts Downloader Tools - Your Ultimate Navigation Guide",
+  description:
+  "Discover the top YouTube Shorts Downloader tools with our comprehensive navigation guide. Save YouTube Shorts in high quality effortlessly. No registration required, free to use, and compatible with all devices. Start downloading now!"
+};
 
 
 const features = [
@@ -35,8 +43,8 @@ const features = [
   },
 ]
 
-const yd4kSites = featuredTools.filter((site) =>
-  site.tag.includes("youtube downloader 4k")
+const yShortsSites = featuredTools.filter((site) =>
+  site.tag.includes("youtube shorts downloader")
 );
 
 export default function Home() {
@@ -50,17 +58,17 @@ export default function Home() {
       <section className="bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-10">Youtube Downloader 4k Tools Nav</h1>
-            <h2 className="text-2xl font-bold mb-6">Convert Youtube Videos to MP4 with Ease</h2>
+            <h1 className="text-4xl font-bold mb-10">YouTube Shorts Downloader Tools Nav</h1>
+
             <p className="text-0.5xl text-gray-600 mb-1">
-              Welcome to YouTube Downloader 4K, your ultimate destination for finding the best tools to download YouTube videos in stunning 4K quality. Our site curates top-rated YouTube downloader tools to ensure you get the highest quality video downloads effortlessly and for free.
+            Enhance your YouTube experience with our expertly curated selection of YouTube Shorts Downloader tools. As a dedicated navigation site for YouTube download tools, we guide you to the best and most reliable websites for downloading YouTube Shorts in high quality effortlessly. Whether you're a content creator, video enthusiast, or someone who loves saving YouTube Shorts, our navigation site helps you find the perfect tools to meet your needs with precision and ease.
             </p>
           </div>
         </div>
       </section>
 
       {/* Featured Tools Section */}
-      <FeaturedTools featuredTools={yd4kSites} description={description} />
+      <FeaturedTools featuredTools={yShortsSites} description={description} />
 
 
       {/* <section className="space-y-8">
