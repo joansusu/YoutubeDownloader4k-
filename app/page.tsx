@@ -6,6 +6,14 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Quote } from "lucide-react"
 import { Download, Monitor, Zap, Shield, Users, PlayCircle, Clock, Laptop } from "lucide-react"
 import { featuredTools } from "@/lib/featuredTools";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    alternates: {
+      canonical: "https://youtubedownloader4k.com/",
+    },
+
+  };
 
 
 const features = [

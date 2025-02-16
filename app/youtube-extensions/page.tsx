@@ -12,7 +12,10 @@ export const metadata: Metadata = {
   title:
     "Best YouTube Extensions - Enhance Your YouTube Experience",
   description:
-  "Explore the best YouTube extensions with our comprehensive navigation guide. Enhance your YouTube experience with powerful tools. No registration required, free to use, and compatible with all browsers. Start enhancing now!"
+  "Explore the best YouTube extensions with our comprehensive navigation guide. Enhance your YouTube experience with powerful tools. No registration required, free to use, and compatible with all browsers. Start enhancing now!",
+  alternates: {
+    canonical: "https://youtubedownloader4k.com/youtube-extensions",
+  },
 };
 
 

@@ -12,7 +12,10 @@ export const metadata: Metadata = {
   title:
     "Best YouTube Shorts Downloader Tools - Your Ultimate Navigation Guide",
   description:
-  "Discover the top YouTube Shorts Downloader tools with our comprehensive navigation guide. Save YouTube Shorts in high quality effortlessly. No registration required, free to use, and compatible with all devices. Start downloading now!"
+  "Discover the top YouTube Shorts Downloader tools with our comprehensive navigation guide. Save YouTube Shorts in high quality effortlessly. No registration required, free to use, and compatible with all devices. Start downloading now!",
+  alternates: {
+    canonical: "https://youtubedownloader4k.com/youtube-shorts-downloader",
+  },
 };
 
 

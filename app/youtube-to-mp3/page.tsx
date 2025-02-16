@@ -13,7 +13,11 @@ export const metadata: Metadata = {
     "Best YouTube to MP3 Converter Tools - Your Ultimate Navigation Guide",
   description:
     "Discover the top YouTube to MP3 converter tools with our comprehensive navigation guide. Convert YouTube videos to high-quality MP3 files effortlessly. No registration required, free to use, and compatible with all devices. Start converting now!",
-};
+    alternates: {
+      canonical: "https://youtubedownloader4k.com/youtube-to-mp3",
+    },
+
+  };
 
 
 const features = [

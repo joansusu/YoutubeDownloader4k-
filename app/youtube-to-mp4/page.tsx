@@ -13,7 +13,12 @@ export const metadata: Metadata = {
     "Top YouTube to MP4 Converter Tools - Your Ultimate Navigation Guide",
   description:
     "Discover the best YouTube to MP4 converter tools with our comprehensive navigation guide. Convert YouTube videos to high-quality MP4 files effortlessly. No registration required, free to use, and compatible with all devices. Start converting now!",
-};
+
+    alternates: {
+      canonical: "https://youtubedownloader4k.com/youtube-to-mp4",
+    },
+
+  };
 
 
 const features = [
