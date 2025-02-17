@@ -1,5 +1,4 @@
-import { Video, Film, Youtube, Image } from "lucide-react"
-import Link from "next/link"
+
 import { FeaturedTools } from "@/components/FeaturedTools"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent } from "@/components/ui/card"
@@ -7,51 +6,27 @@ import { Quote } from "lucide-react"
 import { Download, Monitor, Zap, Shield, Users, PlayCircle, Clock, Laptop } from "lucide-react"
 import { featuredTools } from "@/lib/featuredTools";
 import type { Metadata } from "next";
+import FourCategories from "@/components/FourCategories"
 
 export const metadata: Metadata = {
   title:
     "Best YouTube Extensions - Enhance Your YouTube Experience",
   description:
-  "Explore the best YouTube extensions with our comprehensive navigation guide. Enhance your YouTube experience with powerful tools. No registration required, free to use, and compatible with all browsers. Start enhancing now!",
+    "Explore the best YouTube extensions with our comprehensive navigation guide. Enhance your YouTube experience with powerful tools. No registration required, free to use, and compatible with all browsers. Start enhancing now!",
   alternates: {
     canonical: "https://youtubedownloader4k.com/youtube-extensions",
   },
 };
 
 
-const features = [
-  {
-    title: "Youtube to Mp3",
-    description: "Convert and download Youtube to mp3 format",
-    icon: Video,
-    href: "#",
-  },
-  {
-    title: "Youtube to Mp4",
-    description: "Transform Youtube to MP4 files",
-    icon: Film,
-    href: "#",
-  },
-  {
-    title: "Youtube Extensions",
-    description: "best youtube extensions, youtube video downloader extensions",
-    icon: Youtube,
-    href: "#",
-  },
-  {
-    title: "Youtube Shorts Downloader",
-    description: "Download Youtube video in high resolution",
-    icon: Image,
-    href: "#",
-  },
-]
+
 
 const yExtenSites = featuredTools.filter((site) =>
   site.tag.includes("youtube extensions")
 );
 
 export default function Home() {
- 
+
   const description =
     "Discover our handpicked selection of the best Youtube video downloaders and converters";
 
@@ -64,7 +39,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold mb-10">Best YouTube Extensions </h1>
 
             <p className="text-0.5xl text-gray-600 mb-1">
-            Transform your YouTube experience with our expertly curated selection of YouTube extensions. As a dedicated navigation site for YouTube download tools, we guide you to the best and most reliable browser extensions that enhance your YouTube usage effortlessly. Whether you're a content creator, video enthusiast, or someone who loves optimizing their YouTube interactions, our navigation site helps you find the perfect tools to meet your needs with precision and ease.
+              Transform your YouTube experience with our expertly curated selection of YouTube extensions. As a dedicated navigation site for YouTube download tools, we guide you to the best and most reliable browser extensions that enhance your YouTube usage effortlessly. Whether you're a content creator, video enthusiast, or someone who loves optimizing their YouTube interactions, our navigation site helps you find the perfect tools to meet your needs with precision and ease.
             </p>
           </div>
         </div>
@@ -74,33 +49,10 @@ export default function Home() {
       <FeaturedTools featuredTools={yExtenSites} description={description} />
 
 
-      {/* <section className="space-y-8">
-        <h2 className="text-3xl font-bold text-center">Technical Specifications</h2>
-        <div className="max-w-2xl mx-auto grid gap-6">
-          <div className="grid grid-cols-2 gap-4 p-6 rounded-lg border">
-            <div className="font-semibold">Resolution Support</div>
-            <div className="text-gray-600">1080p, 2K, 4K, 8K</div>
-          </div>
-          <div className="grid grid-cols-2 gap-4 p-6 rounded-lg border">
-            <div className="font-semibold">File Formats</div>
-            <div className="text-gray-600">MP4, MP3, M4A, and more</div>
-          </div>
-          <div className="grid grid-cols-2 gap-4 p-6 rounded-lg border">
-            <div className="font-semibold">Compatibility</div>
-            <div className="text-gray-600">Windows, macOS, Android, iOS</div>
-          </div>
-          <div className="grid grid-cols-2 gap-4 p-6 rounded-lg border">
-            <div className="font-semibold">Speed</div>
-            <div className="text-gray-600">High-speed downloads with no throttling</div>
-          </div>
-        </div>
-      </section> */}
-
-
 
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-        {/* Why Choose */}
+          {/* Why Choose */}
           <section className="bg-gray-50 rounded-lg p-8 mb-1">
             <h2 className="text-3xl font-semibold mb-6 text-center">Why Choose Our Youtube to MP4 Tool Nav?</h2>
             <ul className="space-y-4">
@@ -229,25 +181,7 @@ export default function Home() {
 
 
 
-
-
-          <section className="mb-16">
-            <h2 className="text-3xl font-semibold mb-8 text-center">Featured Youtube to MP4 Tool Categories</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {features.map((feature) => (
-                <Link
-                  key={feature.title}
-                  href={feature.href}
-                  className="p-6 border rounded-lg hover:shadow-lg transition-shadow"
-                >
-                  <feature.icon className="w-12 h-12 mx-auto mb-4 text-blue-600" />
-                  <h3 className="text-xl font-semibold mb-2 text-center">{feature.title}</h3>
-                  <p className="text-gray-600 text-center">{feature.description}</p>
-                </Link>
-              ))}
-            </div>
-          </section>
-
+          <FourCategories excludeWords="Youtube Extensions" />
 
 
           <section className="mb-16">
