@@ -1,47 +1,48 @@
 import { Video, Film, Blocks,Download ,UserRoundPen} from "lucide-react";
 import Link from "next/link";
 
-const categories = [
-  {
-    title: "Youtube to MP3",
-    description: "Best YouTube to MP3 Converter Tools",
-    icon: Video,
-    href: "/youtube-to-mp3",
-  },
-  {
-    title: "Youtube to MP4",
-    description: "Top YouTube to MP4 Converter Tools",
-    icon: Film,
-    href: "/youtube-to-mp4",
-  },
-  {
-    title: "Youtube Extensions",
-    description: "Best YouTube Extensions - Enhance Your YouTube Experience",
-    icon: Blocks,
-    href: "/youtube-extensions",
-  },
-  {
-    title: "Youtube Shorts Downloader",
-    description: "Best YouTube Shorts Downloader Tools",
-    icon: Download,
-    href: "/youtube-shorts-downloader",
-  },
-  {
-    title: "Youtube Name Generator",
-    description: "Free YouTube Name Generator",
-    icon: UserRoundPen,
-    href: "/youtube-name-generator",
-  },
-];
-
 interface FourCategoriesProps {
   excludeWords?: string;
+  currentLang: string;
+  dict: any
 }
-export default function FourCategories({ excludeWords }: FourCategoriesProps) {
+export default function FourCategories({ excludeWords,currentLang,dict }: FourCategoriesProps) {
+  const categories = [
+    {
+      title: `${dict.common.fcg1}`,
+      description: `${dict.common.fcg1d}`,
+      icon: Video,
+      href: `/${currentLang}/youtube-to-mp3`,
+    },
+    {
+      title: `${dict.common.fcg2}`,
+      description: `${dict.common.fcg2d}`,
+      icon: Film,
+      href: `/${currentLang}/youtube-to-mp4`,
+    },
+    {
+      title: `${dict.common.fcg3}`,
+      description: `${dict.common.fcg3d}`,
+      icon: Blocks,
+      href: `/${currentLang}/youtube-extensions`,
+    },
+    {
+      title: `${dict.common.fcg4}`,
+      description: `${dict.common.fcg4d}`,
+      icon: Download,
+      href: `/${currentLang}/youtube-shorts-downloader`,
+    },
+    {
+      title: `${dict.common.fcg5}`,
+      description: `${dict.common.fcg5d}`,
+      icon: UserRoundPen,
+      href: `/${currentLang}/youtube-name-generator`,
+    },
+  ];
   return (
     <section className="mb-16">
       <h2 className="text-3xl font-semibold mb-8 text-center">
-        Featured Youtube Downloader Tool Categories
+      {dict.common.h21}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {categories

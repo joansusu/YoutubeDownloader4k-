@@ -5,6 +5,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import type React from "react"
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { getDictionary } from "@/lib/getDictionary"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -13,17 +14,20 @@ export const metadata: Metadata = {
   description: "Discover top Youtube Downloader 4k tools. Our curated list helps you easily download and convert Youtube videos to MP4/MP3 format. Find the best Youtube video downloaders here!",
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
+  params: { lang: string };
 }) {
+  const dict = await getDictionary(params.lang);
   return (
-    <html lang="en">
+    <html lang={params.lang}>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
-        <Navigation />
+        <Navigation currentLang={params.lang} dict={dict} />
         <main className="flex-grow">{children}</main>
-        <Footer />
+        <Footer currentLang={params.lang} dict={dict} />
       </body>
       <GoogleAnalytics gaId="G-RXQ68911GG" />
     </html>
