@@ -16,7 +16,7 @@ export const featuredTools = [
     imageUrl: "/youtube downloader 4k(2).png",
     link: "https://ytmp3.so/en/youtube-4k-downloader",
     tag: "youtube downloader 4k",
-    rating: 4.8,
+    rating: 4.6,
   },
 
   {
@@ -26,7 +26,7 @@ export const featuredTools = [
     imageUrl: "/youtube downloader 4k(3).png",
     link: "https://app.aiseo.ai/tools/youtube-video-downloader",
     tag: "youtube downloader 4k",
-    rating: 4.8,
+    rating: 4.7,
   },
 
   {
@@ -46,7 +46,7 @@ export const featuredTools = [
     imageUrl: "/youtube downloader 4k(5).png",
     link: "https://www.ukc.com.np/p/youtube-video-downloader-5.html",
     tag: "youtube downloader 4k",
-    rating: 4.8,
+    rating: 4.5,
   },
 
   {
@@ -56,7 +56,7 @@ export const featuredTools = [
     imageUrl: "/youtube downloader 4k(6).png",
     link: "https://kashmirpulse.com/youtube-video-downloader-online",
     tag: "youtube downloader 4k",
-    rating: 4.8,
+    rating: 4.7,
   },
 
   {
@@ -76,7 +76,7 @@ export const featuredTools = [
     imageUrl: "/youtube downloader 4k(8).png",
     link: "https://y2down.cc/pt/",
     tag: "youtube downloader 4k",
-    rating: 4.8,
+    rating: 4.6,
   },
 
   {
@@ -86,7 +86,7 @@ export const featuredTools = [
     imageUrl: "/youtube video downloader (2).png",
     link: "https://www.socialplug.io/free-tools/youtube-video-downloader",
     tag: "youtube downloader 4k",
-    rating: 4.8,
+    rating: 4.6,
   },
 
   {
@@ -106,7 +106,7 @@ export const featuredTools = [
     imageUrl: "/youtube video downloader (4).png",
     link: "https://zeemo.ai/tools/youtube-video-downloader",
     tag: "youtube downloader 4k",
-    rating: 4.8,
+    rating: 4.7,
   },
 
   {
@@ -116,7 +116,7 @@ export const featuredTools = [
     imageUrl: "/youtube video downloader (5).png",
     link: "https://transkriptor.com/youtube-video-downloader/",
     tag: "youtube downloader 4k",
-    rating: 4.8,
+    rating: 4.5,
   },
 
   {
@@ -146,7 +146,7 @@ export const featuredTools = [
     imageUrl: "/youtube video downloader (9).png",
     link: "https://en.y2mate.is/x105/",
     tag: "youtube downloader 4k",
-    rating: 4.8,
+    rating: 4.6,
   },
 
   {
@@ -156,7 +156,7 @@ export const featuredTools = [
     imageUrl: "/youtube video downloader (10).png",
     link: "https://ww12.keepvid.works/en/",
     tag: "youtube downloader 4k",
-    rating: 4.8,
+    rating: 4.7,
   },
   {
     name: "Tube Video Downloader & Video",
@@ -243,7 +243,7 @@ export const featuredTools = [
     imageUrl: "/youtube shorts downloader(3).png",
     link: "https://ummy.net/en/download-youtube-shorts-45fo",
     tag: "youtube shorts downloader",
-    rating: 4.6,
+    rating: 4.9,
   },
   {
     name: "AISEO",
