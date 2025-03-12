@@ -1,7 +1,7 @@
 # YouTube Downloader 4K
 
 ![YouTube Downloader 4K Logo](https://via.placeholder.com/150) <!-- Replace with actual logo URL if available -->
-![Favicon](https://github.com/joansusu/YoutubeDownloader4k-/main/favicon.ico)
+![Favicon](https://github.com/joansusu/YoutubeDownloader4k-/raw/main/public/favicon.ico)
 
 Welcome to [YouTube Downloader 4K](https://youtubedownloader4k.com/) - a powerful and free online tool to effortlessly download YouTube videos in up to 4K ultra-high definition!
 
@@ -27,7 +27,7 @@ YouTube Downloader 4K is a simple and user-friendly online platform designed to 
 
 ## Screenshot
 
-![Website Screenshot](https://github.com/joansusu/YoutubeDownloader4k-/main/YoutubeDownloader4k.jpg) <!-- Replace with actual screenshot path -->
+![Website Screenshot](https://github.com/joansusu/YoutubeDownloader4k-/raw/main/public/YoutubeDownloader4k.jpg) <!-- Replace with actual screenshot path -->
 
 ## Why Choose Us?
 
