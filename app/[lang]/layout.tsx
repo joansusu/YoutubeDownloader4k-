@@ -24,6 +24,11 @@ export default async function RootLayout({
   const dict = await getDictionary(params.lang);
   return (
     <html lang={params.lang}>
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-1101888138551369" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101888138551369"
+          crossOrigin="anonymous"></script>
+      </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <Navigation currentLang={params.lang} dict={dict} />
         <main className="flex-grow">{children}</main>
