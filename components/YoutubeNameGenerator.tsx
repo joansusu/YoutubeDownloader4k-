@@ -24,76 +24,105 @@ export function YoutubeNameGenerator() {
   const [copiedAll, setCopiedAll] = useState(false);
   const [includeNumbers, setIncludeNumbers] = useState(true);
   const [generatedNames, setGeneratedNames] = useState<string[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const { toast } = useToast();
 
   const copyAllUsernames = () => {
-    const allUsernames = generatedNames.join('\n');
-    navigator.clipboard.writeText(allUsernames);
-    setCopiedAll(true);
-    setTimeout(() => setCopiedAll(false), 2000);
-    toast({
-      title: 'All usernames copied!',
-      description: 'All usernames have been copied to your clipboard.',
-    });
+    try {
+      const allUsernames = generatedNames.join('\n');
+      navigator.clipboard.writeText(allUsernames);
+      setCopiedAll(true);
+      setTimeout(() => setCopiedAll(false), 2000);
+      toast({
+        title: 'All usernames copied!',
+        description: 'All usernames have been copied to your clipboard.',
+      });
+    } catch (err) {
+      toast({
+        title: 'Error',
+        description: 'Failed to copy usernames to clipboard.',
+        variant: 'destructive',
+      });
+    }
   };
 
-  const generateNames = () => {
-    const baseNames = [];
-    const inputName = name ? name.toLowerCase().replace(/[^a-z0-9]/g, '') : '';
+  const generateUsername = (baseName: string, categoryWords: string[] | undefined): string => {
+    const random = Math.random();
+    let username = '';
 
-    // Generate 10 unique usernames
-    for (let i = 0; i < 10; i++) {
-      const random = Math.random();
-      let username = '';
-
-      // If no input name, use random words
-      const baseName = inputName || RANDOM_WORDS[Math.floor(Math.random() * RANDOM_WORDS.length)];
-
-      if (random < 0.4) {
-        // Add prefix
-        username = PREFIXES[Math.floor(Math.random() * PREFIXES.length)] + baseName;
-      } else if (random < 0.8) {
-        // Add suffix
-        username = baseName + SUFFIXES[Math.floor(Math.random() * SUFFIXES.length)];
-      } else if (includeNumbers) {
-        // Add random number
-        username = baseName + Math.floor(Math.random() * 999);
-      } else {
-        // Add both prefix and suffix if numbers are disabled
-        username = PREFIXES[Math.floor(Math.random() * PREFIXES.length)] + 
-                  baseName + 
-                  SUFFIXES[Math.floor(Math.random() * SUFFIXES.length)];
-      }
-
-      // Add category-specific elements
-      const categoryWords = CATEGORY_WORDS[category as keyof typeof CATEGORY_WORDS];
-      if (categoryWords) {
-        if (Math.random() < 0.5) {
-          username += categoryWords[Math.floor(Math.random() * categoryWords.length)];
-        } else {
-          username = categoryWords[Math.floor(Math.random() * categoryWords.length)] + username;
-        }
-      }
-      
-      // Add random number at the end if numbers are enabled and not already added
-      if (includeNumbers && !username.match(/\d/) && Math.random() < 0.3) {
-        username += Math.floor(Math.random() * 99);
-      }
-
-      baseNames.push(username);
+    if (random < 0.4) {
+      username = PREFIXES[Math.floor(Math.random() * PREFIXES.length)] + baseName;
+    } else if (random < 0.8) {
+      username = baseName + SUFFIXES[Math.floor(Math.random() * SUFFIXES.length)];
+    } else if (includeNumbers) {
+      username = baseName + Math.floor(Math.random() * 999);
+    } else {
+      username = PREFIXES[Math.floor(Math.random() * PREFIXES.length)] + 
+                baseName + 
+                SUFFIXES[Math.floor(Math.random() * SUFFIXES.length)];
     }
 
-    setGeneratedNames(baseNames);
+    if (categoryWords) {
+      if (Math.random() < 0.5) {
+        username += categoryWords[Math.floor(Math.random() * categoryWords.length)];
+      } else {
+        username = categoryWords[Math.floor(Math.random() * categoryWords.length)] + username;
+      }
+    }
+    
+    if (includeNumbers && !username.match(/\d/) && Math.random() < 0.3) {
+      username += Math.floor(Math.random() * 99);
+    }
+
+    return username;
   };
 
-  const copyToClipboard = (username: string, index: number) => {
-    navigator.clipboard.writeText(username);
-    setCopiedIndex(index);
-    setTimeout(() => setCopiedIndex(null), 2000);
-    toast({
-      title: 'Username copied!',
-      description: `${username} has been copied to your clipboard.`,
-    });
+  const generateNames = async () => {
+    try {
+      setIsLoading(true);
+      setError(null);
+      
+      const baseNames = [];
+      const inputName = name ? name.toLowerCase().replace(/[^a-z0-9]/g, '') : '';
+      const categoryWords = CATEGORY_WORDS[category as keyof typeof CATEGORY_WORDS];
+
+      // Generate 10 unique usernames
+      for (let i = 0; i < 10; i++) {
+        const baseName = inputName || RANDOM_WORDS[Math.floor(Math.random() * RANDOM_WORDS.length)];
+        const username = generateUsername(baseName, categoryWords);
+        baseNames.push(username);
+      }
+
+      setGeneratedNames(baseNames);
+    } catch (err) {
+      setError('Failed to generate usernames. Please try again.');
+      toast({
+        title: 'Error',
+        description: 'Failed to generate usernames. Please try again.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const copyToClipboard = async (username: string, index: number) => {
+    try {
+      await navigator.clipboard.writeText(username);
+      setCopiedIndex(index);
+      setTimeout(() => setCopiedIndex(null), 2000);
+      toast({
+        title: 'Username copied!',
+        description: `${username} has been copied to your clipboard.`,
+      });
+    } catch (err) {
+      toast({
+        title: 'Error',
+        description: 'Failed to copy username to clipboard.',
+        variant: 'destructive',
+      });
+    }
   };
 
   return (
@@ -145,12 +174,23 @@ export function YoutubeNameGenerator() {
             onClick={generateNames}
             className="w-full"
             size="lg"
+            disabled={isLoading}
           >
-            <RefreshCw className="w-4 h-4 mr-2" />
-            Generate Usernames
+            {isLoading ? (
+              <RefreshCw className="w-4 h-4 mr-2 animate-spin" />
+            ) : (
+              <RefreshCw className="w-4 h-4 mr-2" />
+            )}
+            {isLoading ? 'Generating...' : 'Generate Usernames'}
           </Button>
         </div>
       </Card>
+
+      {error && (
+        <div className="text-red-500 text-sm mt-2">
+          {error}
+        </div>
+      )}
 
       {generatedNames.length > 0 && (
         <Card className="p-6">

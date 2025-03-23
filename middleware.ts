@@ -7,7 +7,7 @@ const defaultLocale = 'en';
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  if (pathname.match(/\.(png|jpg|jpeg|gif|svg)$/)) {
+  if (pathname.match(/\.(png|jpg|jpeg|gif|svg|txt)$/)) {
     return NextResponse.next();
   }
   const pathLocale = locales.find(
