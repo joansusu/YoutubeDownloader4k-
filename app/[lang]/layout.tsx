@@ -25,9 +25,7 @@ export default async function RootLayout({
   return (
     <html lang={params.lang}>
       <head>
-        <meta name="google-adsense-account" content="ca-pub-1101888138551369" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101888138551369"
-          crossOrigin="anonymous"></script>
+      <meta name="monetag" content="6b74435e8d45b0233cef16c008425ccc" />
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <Navigation currentLang={params.lang} dict={dict} />
