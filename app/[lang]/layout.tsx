@@ -24,10 +24,6 @@ export default async function RootLayout({
   const dict = await getDictionary(params.lang);
   return (
     <html lang={params.lang}>
-      <head>
-      <meta name="monetag" content="6b74435e8d45b0233cef16c008425ccc" />
-      <script src="https://kulroakonsu.net/88/tag.min.js" data-zone="138710" async data-cfasync="false"></script>
-      </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <Navigation currentLang={params.lang} dict={dict} />
         <main className="flex-grow">{children}</main>
