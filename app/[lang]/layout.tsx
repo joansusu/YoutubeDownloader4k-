@@ -24,9 +24,12 @@ export default async function RootLayout({
   const dict = await getDictionary(params.lang);
   return (
     <html lang={params.lang}>
+      <script async={true} data-cfasync="false" src="//pl26309251.effectiveratecpm.com/ce09d59ccc49b74e4737407b7f4fafeb/invoke.js"></script>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <Navigation currentLang={params.lang} dict={dict} />
+        <div id="container-ce09d59ccc49b74e4737407b7f4fafeb"></div>
         <main className="flex-grow">{children}</main>
+        <div id="container-ce09d59ccc49b74e4737407b7f4fafeb"></div>
         <Footer currentLang={params.lang} dict={dict} />
       </body>
       <GoogleAnalytics gaId="G-RXQ68911GG" />
