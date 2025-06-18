@@ -22,7 +22,9 @@ export function Footer({ currentLang, dict }: { currentLang: string; dict: any }
             <Link href={`/${currentLang}/terms-of-service`} className="text-gray-600 hover:text-gray-900">
             {dict.footer.f3}
             </Link>
-
+            <a href="https://www.easycropimage.com/youtube-thumbnail-resizer" target="_blank" className="text-gray-600 hover:text-gray-900">
+            Youtube Thumbnail Resizer
+            </a>
           </nav>
         </div>
         <div className="mt-8 text-center text-gray-500 text-sm">
